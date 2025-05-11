@@ -1,0 +1,9 @@
+Normalization practice in AirBnB 
+========================
+# Normalization practice in AirBnB
+Normalization is a database design technique that reduces data redundancy and improves data integrity. It involves organizing data into tables and establishing relationships between them. The goal is to ensure that each piece of data is stored only once, which minimizes the risk of inconsistencies and anomalies.
+In the context of AirBnB, normalization can be applied to various aspects of the platform, including user profiles, property listings, bookings, and reviews. Here are some examples of how normalization can be implemented in AirBnB:
+1. **User Profiles**: Instead of storing user information (name, email, phone number, etc.) in multiple tables, created a separate table for user profiles. This table can be linked to other tables (e.g., bookings, reviews) using a unique user ID.
+2. **Property Listings**: Create a separate table for property listings that includes details such as property type, location, amenities, and pricing. This table can be linked to a separate table for property owners, ensuring that each property is associated with a single owner.
+3. **Bookings**: Created a bookings table that includes information about the user, property, check-in and check-out dates, and payment details. This table can be linked to both the user profiles and property listings tables.
+4. **Reviews**: Created a reviews table that includes user feedback on properties. This table can be linked to both the user profiles and property listings tables, allowing users to leave reviews for specific properties.
