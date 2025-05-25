@@ -1,4 +1,11 @@
 -- SCRIPTS
 SELECT * FROM 
 booking
-INNER JOIN users ON booking.user_id = users.user_id
+INNER JOIN users ON booking.user_id = users.user_id;
+
+
+SELECT * FROM
+property
+LEFT JOIN review ON property.property_id = review.property_id;
+
+
