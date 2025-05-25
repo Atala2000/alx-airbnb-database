@@ -1,0 +1,3 @@
+EXPLAIN SELECT * FROM booking WHERE user_id = 5;
+
+SHOW PROFILE;
