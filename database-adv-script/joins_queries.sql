@@ -6,7 +6,8 @@ INNER JOIN users ON booking.user_id = users.user_id;
 
 SELECT * FROM
 property
-LEFT JOIN review ON property.id = review.property_id\;
+LEFT JOIN review ON property.id = review.property_id
+ORDER BY property.name;
 
 
 SELECT * FROM
